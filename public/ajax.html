@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <button id="btn">点击获取数据</button>
+    <script>
+        document.querySelector("#btn").addEventListener("click",function(){
+            var oReq = new XMLHttpRequest();
+            oReq.onload = function(){
+                console.log(this.responseText);
+            };
+            oReq.open("get", "getData?a=b", true);
+            oReq.send();
+        });
+    </script>
+</body>
+</html>
