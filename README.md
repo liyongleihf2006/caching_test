@@ -4,6 +4,7 @@
   1、要使用fiddler<br/>
   2、firefox要执行about:config 然后看看browser.cache.disk.enable的值是否是true,若不是true先改成true<br/>
   3、ie测试的时候千万不要F12打开调试工具,否则缓存可能不起作用<br/>
+  4、用的是node作为web容器(我node作为服务器灰常菜),里面的代码都是非常初级的,直接express官网中入门的代码拿过来了.
   参考文章是:<br/>
   ([https://www.mnot.net/cache_docs/]( https://www.mnot.net/cache_docs/ ))<br/> 
   我也不喜欢看外文,可以看看旭神对上文的翻译:<br/>
